@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Informacion</title>
+        <meta charset="UTF-8">
+        <link href="css/estilos.css" rel="stylesheet"/> 
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"/>
+        <style>
+            header{
+                margin-inline: 1.5em;
+                margin-top: 1em;
+            }
+            h1{
+                font-size: 2.5em;
+            }
+            h2{
+                justify-content: left;
+                margin-bottom: 0.3em;
+                font-size: 1.9em;
+            }
+            h3{
+                justify-content: left;
+                font-size: 1.8em;
+                margin-bottom: 0.3em;
+                color: #f86363;
+            }
+            h4{
+                justify-content: left;
+                font-size: 1.8em; 
+                color: #f86363;
+                margin-bottom: 0.3em;
+            }
+            h5{
+                justify-content: left;
+                font-size: 1.8em;
+                color: #f86363;
+                margin-bottom: 0.3em;
+            }
+            p{
+                text-align: left;
+                font-size: 1.7em;
+                margin-bottom: 0.5em;
+            }
+            main>section:first-of-type {
+              position: sticky;
+               top: 1em;
+              }
+            .info{
+                font-size: 1.5em;
+            }
+            nav ul{
+
+              display: flex;
+              flex-wrap: wrap;
+              text-align: center;
+              justify-content: center;
+              font-size: 0.7em;
+              background-color: rgb(228, 218, 208);
+
+            }
+            li{
+               border: none;
+            }
+            .video{
+                width: 100%;
+               
+            }
+            img{
+                transition: 0.5s;
+                object-fit: cover;
+            }
+            img:hover{
+                transform: scale(1.8);
+            }
+            @media (min-width: 60em) {
+                p{
+                     font-size: 1.5em;
+                }
+              }
+            @media (min-width: 640px){
+                h1{
+                    font-size: 3em;
+                }
+                h3, h4, h5{
+                    font-size: 2.3em;
+                }
+                p{
+                    font: 2em;
+                }
+                .video{
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                }
+                h2{
+                  font-size: 2.5em;
+                }
+
+            }
+            
+        
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>LOLLINFORMATE</h1>
+            <nav>
+                <ul>
+                    <li><a href="informacion.html">Información </a> </li>
+                    <li><a href="actividades.html">Actividades </a></li>
+                    <li><a href="voluntariados.html">Voluntariados </a></li>
+                    <li><a href="nosotros.html"> Nosotros</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2 class="info"><a href="informacion.html">Información </a> </h2>
+            </section>
+            <section>
+                <h3>Acerca del festival</h3>
+                <p>Bienvenido al vibrante mundo del Lollapalooza, un festival que va más allá de la música para convertirse en una experiencia cultural inigualable. Cada año, miles de personas de todas las edades y procedencias se reúnen en ciudades de todo el mundo para sumergirse en la atmósfera única del Lollapalooza. Con una alineación estelar que abarca una amplia gama de géneros musicales, desde el rock y el pop hasta el hip-hop, la electrónica y más, el festival ofrece algo para todos los gustos.</p>
+            </section>
+            <iframe class="video" width="560" height="315"  src="https://www.youtube.com/embed/Tm20dQwgTB0?si=FpoNJlKJp891hyJy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <section>
+                <p>Pero el Lollapalooza es mucho más que música. Es un lugar donde la creatividad florece y la expresión artística cobra vida en cada rincón. Desde las impresionantes instalaciones de arte hasta las experiencias interactivas, hay infinitas oportunidades para explorar y descubrir nuevos horizontes.</p>
+            </section>
+            <section>
+                <h4>Line up</h4>
+                <div id="lineup">
+                    <img src="imagenes/lineup.png" alt="Lineup">
+                </div>
+            </section>
+            <section>
+                <h5>Comida</h5>
+                <div id="comida">
+                    <img src="imagenes/lollafood.png" alt="comida">
+                </div>
+            </section>
+            <button>
+                <a href="index.html"><div id="Volver">
+                    <img src="imagenes/atras.png" alt="Volver">
+                </div></a> 
+                
+            </button>
+        </main>
+        <footer>
+            <article>Contacto</article> 
+           <article>lollinformate@gmail.com
+            1122223333</article>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,297 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+img{
+    max-width:  100%;
+}
+#Lollapalooza{
+    width: 100%;
+    text-align: center;
+}
+#icono{
+    min-width: min-content;
+    text-align:right;
+    margin-right: 3%;
+}
+#Menu{
+    width: 10%;
+    display: flex;
+}
+#festival{
+    width: 90%;
+}
+#lineup{
+    width: 80%
+}
+#comida{
+    width: 80%;
+}
+#privacidad {
+    width: 100%
+}
+#condiciones{
+    width: 100%;
+}
+#ninios{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2em;
+}
+#voluntarios{
+    width: 100%;
+}
+#Grupo{
+    width: 40%;
+}
+#Cerveza{
+    width: 40%;
+}
+#Dj{
+    width: 40%;
+}
+#talleres{
+    margin-top: 2em;
+    text-align: center;
+}
+ul {
+    list-style: none;
+    
+  }
+body{
+    background-color: rgb(236, 232, 228);
+}
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "footer";
+    grid-template-rows: auto auto 1fr;
+}
+nav         { grid-area: nav; }
+main        { grid-area: main; }
+aside       { grid-area: aside; }
+footer      { grid-area: footer; }
+
+header{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #5CE1E6;
+    margin-top: 10px;
+    text-align: center;
+    font-size: x-large;
+}
+h1{
+    margin-bottom: 0.5em;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    font-size: x-small;
+    margin-bottom: 3.5em;
+}
+li{
+  
+   padding: 0.5em;
+   border: 2px solid #5CE1E6;  
+  background-color: transparent; 
+  padding: 10px 20px; 
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+
+a{
+    font-size: 2em;
+    text-decoration: none;
+    color:#FF5757;
+}
+main{
+    margin-inline: 1.5em;
+}
+h2{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FF5757;
+    font-size: 2em;
+    justify-content: center;
+    display: grid;
+    place-items: center;
+    flex-wrap: wrap;
+    gap: .5em;
+    text-align: center;
+    margin-bottom: 0.3;
+}
+h3{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #5CE1E6;
+    font-size: 1.7em;
+    justify-content: center;
+    display: grid;
+    place-items: center;
+    flex-wrap: wrap;
+    gap: .5em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+h4{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FF5757;
+    font-size: 1.5em;
+    font-weight:500px;
+    display: grid;
+    place-items: center;
+    flex-wrap: wrap;
+    gap: .5em;
+    margin-bottom: 0.3em;
+}
+h5{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #5CE1E6;
+    font-size: 1.5em;
+    display: grid;
+    place-items: center;
+    flex-wrap: wrap;
+    gap: .5em;
+    margin-inline: 1.5em;
+    text-align: center;
+    margin-bottom: 0.3em;
+}
+p{
+    font-size: 1em;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    display: grid;
+    place-items: center;
+    flex-wrap: wrap;
+    gap: .5em;
+    text-align: center;
+    margin-bottom: 0.3em;
+}
+label{
+    font-family: "Hanken Grotesk", sans-serif;
+    
+}
+footer{
+    font-size: small;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    background-color: #FF5757;
+    grid-template-rows: max-content;
+}
+#Volver{
+    position: fixed;
+    background-color:rgb(219, 238, 234) ;
+     bottom: 30px;
+            right: 10px;
+            z-index: 1000; 
+            padding: 10px 20px
+}
+#formulario {
+    display: none;
+    background-color: #FF5757;
+}
+button{
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 60em) {
+    body{
+        grid-template-areas: 
+        "header header header"
+        "nav    main"
+        "footer footer";
+        grid-template-rows: auto min-content auto;
+    }
+    nav ul{
+
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+       font-size: 0.7em;
+       background-color: rgb(228, 218, 208);
+
+    }
+    li{
+        border: none;
+    }
+    header{
+        font-size: x-large;
+    }
+    #festival{
+        width: 100%;
+        text-align:center;
+    }
+    #lineup{
+        width: 90%
+    }
+    #comida{
+        width: 90%;
+    }
+    h1{
+        font-size: 3em ;
+    }
+    #Usuario{
+        width: 5%;
+    }
+    .requisitos{
+        text-align: left;
+    }
+    h2{
+        font-size: 2.2em;
+    }
+    h3{
+        font-size: 2em ;
+    }
+    .Gif{
+        display: none;
+    }
+    #talleres{
+        text-align: center;
+    }
+    
+}
+
+@media (min-width: 640px ){
+    h1{
+        font-size: 2.3em;
+    }
+    nav ul{
+        font-size: 0.7em;
+    }
+    p{
+        font-size: 1em;
+    }
+    
+}

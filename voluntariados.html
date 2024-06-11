@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> Voluntariados</title>
+        <meta charset="UTF-8">
+        <link href="css/estilos.css" rel="stylesheet"/> 
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"/>
+        <style>
+             header{
+                margin-inline: 1.5em;
+                margin-top: 1em;
+            }
+            h1{
+                font-size: 2.5em;
+            }
+            h2{
+                justify-content: left;
+                margin-bottom: 0.3em;
+                font-size: 1.9em;
+            }
+            p{
+                text-align: left;
+                font-size: 1em;
+                margin-bottom: 0.5em;
+            }
+            h3, h4{
+                color: #f86363;
+                margin-bottom: 0.3em;
+                font-size: 1.8em;
+            }
+            h3{
+                justify-content: left;
+                text-align: left;
+            }
+            h4{
+                justify-content: left;
+                margin-bottom: 0.3em;
+            }
+            p{
+                font-size: 1.7em;
+            }
+            form {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+             width: 300px;
+             border: 1px solid #ccc;
+             padding: 20px;
+             border-radius: 5px;
+            }
+             label {
+              margin-bottom: 5px;
+            }
+
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+         margin-bottom: 10px;
+         padding: 10px;
+         width: 100%;
+         border: 1px solid #ccc;
+         border-radius: 5px;
+         font-size: 16px;
+        }
+
+input[type="submit"] {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; 
+    margin: 0 auto; 
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+main>section:first-of-type> h2{
+    position: sticky;
+    top: 1em;
+}
+.volu{
+    font-size: 1em;
+}
+nav ul{
+
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+justify-content: center;
+font-size: 0.7em;
+background-color: rgb(228, 218, 208);
+
+}
+li{
+border: none;
+}
+@media (min-width: 60em){
+    .imagenytext{
+        display: flex;
+    }
+    .requisitos{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5em;
+    }
+    #voluntarios{
+        height:auto;
+    }
+    .imagenn{
+        display: flex;
+    }
+    h3{
+        font-size:1.5em ;
+    }
+    h2{
+        font-size: 2.2em;
+    }
+    h1{
+        font-size: 3em;
+    }
+    h4{
+        font-size: 1.5em;
+    }
+}
+@media (min-width:640px){
+    .requisitos{
+        justify-content: left;
+        font-size: 1.4em;
+    }
+    .volu{
+        font-size: 1.4em;
+    }
+    h1{
+      font-size: 3em;
+    }
+    h3, h4, h5{
+      font-size: 2.3em;
+    }
+    
+}
+
+        </style>
+    </head>
+    <body>
+        <header>
+         <h1> LOLLINFORMATE</h1>
+         <nav>
+            <ul>
+                <li><a href="informacion.html">Información </a> </li>
+                <li><a href="actividades.html">Actividades </a></li>
+                <li><a href="voluntariados.html">Voluntariados </a></li>
+                <li><a href="nosotros.html"> Nosotros</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <section>
+                <h2 class="volu"><a href="voluntariados.html">Voluntariados </a> </h2>
+            </section>
+            <section>
+                <h3> Sobre trabajar ahi </h3>
+            </section>
+            <section class="imagenytext">
+                <p class="requisitos">
+                1-Requisitos:
+                +18.
+                Disponibilidad horaria.
+                Requisitos de habilidades.</p> 
+            </section>
+            <section class="imagenn">
+            <p class="requisitos">2-Capacitación:
+                Sesión de capacitación sobre tus responsabilidades, procedimientos de seguridad y otros detalles importantes.</p>               
+                <div id="voluntarios">
+                    <img src="imagenes/voluntarios.jpg" alt="voluntariados">
+                </div>
+            </section>
+            <section>
+                <h4> Anotate </h4>
+                <form action="enviar.php" method="post">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="telefono">Número de teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+            </section>
+            <button>
+                <a href="index.html">  <div id="Volver">
+                    <img src="imagenes/atras.png" alt="Volver">
+                </div> </a> 
+              </button>
+        </main>
+    </body>
+    <footer>
+        <article>Contacto</article> 
+       <article>lollinformate@gmail.com
+        1122223333</article>
+    </footer>
+</html>

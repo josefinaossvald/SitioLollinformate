@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Actividades</title>
+        <meta charset="UTF-8">
+        <link href="css/estilos.css" rel="stylesheet"/> 
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"/>
+        <style>
+             header{
+                margin-inline: 1.5em;
+                margin-top: 1em;
+            }
+            h1{
+                font-size: 2.5em;
+            }
+            h2{
+                justify-content: left;
+                margin-bottom: 0.3em;
+                font-size: 1.9em ;
+            }
+            h3{
+                font-size: 1.8em;
+                margin-bottom: 0.3em;
+                background-image: url(imagenes/casitaslolla.jpg);
+                padding: 15%;
+                background-size: cover;
+                background-repeat: no-repeat;
+             background-position: center;
+                color:#000000;
+            }
+            h3{
+                justify-content:left;
+            }
+            h4{
+                justify-content: left;
+                font-size: 1.8em;
+                margin-bottom: 0.3em;
+                color:#f86363;
+            }
+            h5,h6{
+                justify-content: right;
+                font-size: 1.5em;
+            }
+            h5{
+                text-align: right;
+            }
+            h6{
+                font-family: "Archivo Black", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+               color: #FF5757;
+            }
+            p{
+                text-align: left;
+                font-size: 1.7em;
+                margin-bottom: 0.5em;
+            }
+            main> section:first-of-type {
+              position: sticky;
+               top: 1em;
+              }
+              .comida{
+                    display: flex;
+                }
+                .musica{
+                    display: flex;
+                }
+                .disco{
+                    display: flex;
+                }
+            .activ{
+                font-size: 1em;
+            }
+            nav ul{
+
+             display: flex;
+             flex-wrap: wrap;
+             text-align: center;
+             justify-content: center;
+             font-size: 0.7em;
+             background-color: rgb(228, 218, 208);
+
+            }
+            li{
+            border: none;
+            }
+            .Gif{
+                display: none;
+            }
+            @media (min-width: 60em){
+                p{
+                    font-size: 1.5em;
+                }
+                h5,h6{
+                    font-size: 2em;
+                }
+                h1{
+                    font-size: 3em ;
+                 } 
+                h2{
+                    font-size: 2.2em;
+                  }
+                h3,h4{
+                    font-size: 2em ;
+                 }
+                .Gif{
+                    display: none;
+                }
+                .comida{
+                    display: flex;
+                }
+                .musica{
+                    display: flex;
+                }
+                .disco{
+                    display: flex;
+                }
+                .grid-container {
+                   display: grid;
+                   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                   gap: 20px;
+                   padding: 20px;
+                }
+                .grid-item {
+                    padding: 20px;
+                }
+                #Cerveza {
+                 width: 100% ;
+                  display: block;
+                  margin-bottom: 10px;
+                }
+                #Grupo{
+                    width: 100%;
+                }
+                #Dj{
+                    width: 100%;
+                }
+                #talleres{
+                  width: 50%;
+                  text-align: center;
+                  margin: auto
+                }
+                .activ{
+                    font-size: 1.4em;
+                }
+              }
+            @media (min-width:640px)and (max-width: 960px){
+                body{
+                    justify-content: center;
+                    align-items: center;
+                    
+                }
+                .grid-container {
+                   display: grid;
+                   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                   gap: 20px;
+                   padding: 20px;
+                }
+                .grid-item {
+                    padding: 20px;
+                }
+                #Cerveza {
+                 width: 90% ;
+                  display: block;
+                  margin-bottom: 10px;
+                }
+                #Grupo{
+                    width: 90%;
+                }
+                #Dj{
+                    width: 90%;
+                }
+                h4{
+                    font-size: 1.7em;
+                }
+                p{
+                    font-size: 1.3em;
+                }
+                .Gif{
+                    display: block;
+                    width: 100%;
+                }
+                h1{
+                    font-size: 3em;
+                }
+                .activ{
+                    font-size: 1.4em;
+                }
+            }
+        
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1> LOLLINFOMATE </h1>
+            <nav>
+                <ul>
+                    <li><a href="informacion.html">Información </a> </li>
+                    <li><a href="actividades.html">Actividades </a></li>
+                    <li><a href="voluntariados.html">Voluntariados </a></li>
+                    <li><a href="nosotros.html"> Nosotros</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2 class="activ"><a href="actividades.html"> Actividades</a> </h2>
+            </section>
+            
+                <h3> Adultos </h3>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <h5>Relaja y tomate una cerveza!</h5>
+                        <section class="comida">
+                            <div id="Cerveza">
+                                <img src="imagenes/icono-cerveza.png" alt="Cerveza">
+                            </div>
+                            <p>Cerveza Artesanal y Coctelería: Descubre nuevas cervezas locales o prueba un cóctel creativo mientras te mezclas con otros asistentes al festival.</p>
+                        </section>
+                    </div>
+                    <div class="grid-item">
+                        <h6>No solo es música</h6> 
+                        <section class="musica">
+                            <p>Participa en talleres y actividades interactivas que van desde clases de baile y yoga hasta talleres de arte y manualidades. Aprende nuevas habilidades, conoce gente nueva y diviértete mientras exploras tu lado creativo.</p>
+                            <div id="Grupo">
+                                <img src="imagenes/gurpo.png" alt="Grupo">
+                            </div>
+                        </section>
+                    </div>
+                    <div class="grid-item">
+                        <h5>Vibrando!</h5>
+                        <section class="disco">
+                            <div id="Dj">
+                                <img src="imagenes/consola-dj.png" alt="Dj">
+                            </div>
+                            <p>Los amantes del mundo DJ tendrán la oportunidad de vibrar al ritmo de los más variados y mejores artistas de la música electrónica de Argentina y Latinoamérica, que combinarán estilos musicales.</p>
+                        </section>
+                    </div>
+                    <img class="Gif"  src="imagenes/gif.gif" alt="Gif">
+                </div>
+            </section>
+            <section>
+                <h4> Niños </h4>
+                <div id="ninios">
+                    <img src="imagenes/kidzapalooza.jpg" alt="kidzapalooza">
+                </div>
+                <p> Conciertos,talleres y actividades para los más chicos!</p>
+                <div id="talleres">
+                    <img src="imagenes/talleresnenes.jpeg" alt="talleres">
+                </div>
+            </section>
+            <button>
+                <a href="index.html"> <div id="Volver">
+                    <img src="imagenes/atras.png" alt="Volver">
+                </div></a> 
+               
+            </button>
+        </main>
+        <footer>
+            <article> Contacto lollaiinformate@gmail.com 1122223333</article>
+        </footer>
+    </body>
+</html>
